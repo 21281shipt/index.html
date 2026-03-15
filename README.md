@@ -2,7 +2,7 @@
 <html lang="sr">
 <head>
     <meta charset="UTF-8">
-    <title>Вељко Амбрушић | Експертска Рестаурација</title>
+    <title>Veljko Ambrosic | Ekspert za restauraciju</title>
     <style>
         body { background-color: #0a0a0a; color: #d4af37; font-family: 'Times New Roman', serif; line-height: 1.6; padding: 20px; }
         .container { max-width: 800px; margin: auto; border: 1px solid #d4af37; padding: 40px; background: #111; }
@@ -15,21 +15,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Вељко Амбрушић</h1>
-        <p style="text-align: center; font-style: italic;">Традиција, знање, наслеђе (1960 - 2026)</p>
+        <h1>Veljko Ambrosic</h1>
+        <p style="text-align: center; font-style: italic;">Tradicija, znanje, nasleđe (1960 - 2026)</p>
 
-        <h2>О нама</h2>
-        <p class="info">Породична традиција покренута 1960. године од стране мог деде, Вељка Амбрушића. Од тада, кроз три генерације, наше руке су рестаурирале преко 350 цркава широм Европе. Свој печат оставили смо у Паризу, Бечу, Берлину, Фиренци и нашем Сомбору, посебно на цркви Пресветог Тројства.</p>
+        <h2>O nama</h2>
+        <p class="info">Porodična tradicija pokrenuta 1960. godine od strane mog dede, Veljka Ambrosica. Od tada, kroz tri generacije, naše ruke su restaurirale preko 350 crkava širom Evrope. Svoj pečat ostavili smo u Parizu, Beču, Berlinu, Firenci i našem Somboru, posebno na crkvi Presvetog Trojstva.</p>
 
-        <h2>Образовање и стручност</h2>
-        <p class="info">Дипломирао сам на Сорбони, где сам спојио академско знање са породичним занатом. Сарадник сам и познаник високих верских званичника – од надбискупа и бискупа до свештенства широм Европе. Мој рад је континуитет озбиљног, професионалног и духовног ангажмана.</p>
+        <h2>Obrazovanje i stručnost</h2>
+        <p class="info">Diplomirao sam na Sorboni, gde sam spojio akademsko znanje sa porodičnim zanatom. Saradnik sam i poznanik visokih verskih zvaničnika – od nadbiskupa i biskupa do sveštenstva širom Evrope. Moj rad je kontinuitet ozbiljnog, profesionalnog i duhovnog angažmana.</p>
 
-        <h2>Пословна сигурност</h2>
-        <p class="info">Мој рад је у потпуности легалан и транспарентан. Као вишегодишњи депоненти Raiffeisen банке, породица Амбрушић гарантује интегритет свих својих трансакција. Сваки посао је поткрепљен деценијама труда, признањима и дубоким поштовањем културног наслеђа.</p>
+        <h2>Poslovna sigurnost</h2>
+        <p class="info">Moj rad je u potpunosti legalan i transparentan. Kao višegodišnji deponenti Raiffeisen banke, porodica Ambrosic garantuje integritet svih svojih transakcija. Svaki posao je potkrepljen decenijama truda, priznanjima i dubokim poštovanjem kulturnog nasleđa.</p>
 
         <div class="contact">
-            <p>За озбиљне консултације и професионалну рестаурацију:</p>
-            <a href="mailto:TVOJ_EMAIL@gmail.com" class="btn">КОНТАКТИРАЈТЕ МЕ</a>
+            <p>Za ozbiljne konsultacije i profesionalnu restauraciju:</p>
+            <a href="mailto:TVOJ_EMAIL@gmail.com" class="btn">KONTAKTIRAJTE ME</a>
         </div>
     </div>
 </body>
