@@ -1,51 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <meta charset="UTF-8">
-    <title>Veljko Ambrošić | Official Restoration</title>
-    <style>
-        body { background-color: #050505; color: #c5a059; font-family: 'Playfair Display', serif; text-align: center; padding: 40px; }
-        .container { max-width: 700px; margin: auto; border: 1px solid #c5a059; padding: 50px; background: #0a0a0a; }
-        h1 { text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; }
-        .subtitle { font-style: italic; color: #888; margin-bottom: 30px; }
-        .bio { font-size: 1.1em; color: #dcdcdc; text-align: justify; margin: 30px 0; }
-        .btn { display: block; width: 100%; padding: 25px; background: #c5a059; color: #000; font-weight: bold; border-radius: 2px; cursor: pointer; border: none; text-transform: uppercase; font-size: 1.3em; }
-        .verification { font-size: 0.9em; color: #c5a059; font-weight: bold; border-top: 1px solid #c5a059; padding-top: 20px; margin-top: 30px; }
-    </style>
+    <title>Veljko Ambrošić | Nasleđe i Ekskluzivnost</title>
 </head>
-<body>
-    <div class="container">
-        <h1>Veljko Ambrošić</h1>
-        <p class="subtitle">Third Generation Heritage Restorer (Est. 1960)</p>
+<body style="font-family: 'Georgia', serif; text-align: center; padding: 40px; background-color: #fcfcfc; color: #1a1a1a;">
 
-        <div class="bio">
-            Continuing the legacy of Ivan and Veljko Ambrošić, I bring over 20 years of expertise to the restoration of European cultural heritage. From Sorbonne to the cathedrals of Berlin, Vienna, Florence, and Sombor, my work is a commitment to tradition and excellence.
-        </div>
-
-        <button id="ctaBtn" class="btn">ACCESS EXCLUSIVE CONTENT</button>
+    <div style="max-width: 700px; margin: 0 auto; background: white; padding: 50px; border: 2px solid #d4af37; border-radius: 10px; box-shadow: 0 15px 35px rgba(0,0,0,0.15);">
         
-        <div class="verification">
-            Verified Raiffeisen Bank Depositor | Official Professional Record
+        <h1 style="font-size: 32px; margin-bottom: 5px;">Veljko Ambrošić</h1>
+        <p style="font-size: 16px; color: #555; margin-bottom: 30px;">
+            Tradicija od 1960. godine | Generacijski projekti: Berlin, Beč, Pariz, Rđica
+        </p>
+        
+        <div style="text-align: left; background: #f9f9f9; padding: 20px; border-radius: 5px; margin-bottom: 30px; font-size: 14px; line-height: 1.6;">
+            <p><strong>Napomena o legitimitetu:</strong> Svi prihodi ostvareni kroz digitalnu ekskluzivnu zonu povezani su sa višedecenijskim porodičnim nasleđem i radom na sakralnim objektima od nacionalnog značaja. Sve transakcije se obavljaju putem zvaničnih platformi i deponuju na račun u Raiffeisen banci, u skladu sa porodičnom tradicijom i zakonskim okvirom.</p>
         </div>
-    </div>
+        
+        <a href="https://www.instagram.com/veljko.ambrosic/subscription" 
+           style="display: block; background-color: #000; color: #d4af37; padding: 22px; text-decoration: none; font-weight: bold; font-size: 20px; border: 1px solid #d4af37; border-radius: 5px;">
+           PRISTUPI EKSKLUZIVNOJ ZONI
+        </a>
+        
+        <p style="margin-top: 30px; font-size: 11px; color: #999; letter-spacing: 2px;">
+            VELJKO AMBROŠIĆ | NASLEĐE I KVALITET
+        </p>
 
-    <script>
-        document.getElementById('ctaBtn').addEventListener('click', function() {
-            fetch('https://ipapi.co/json/')
-                .then(response => response.json())
-                .then(data => {
-                    const regional = ['RS', 'HR', 'BA', 'ME', 'MK', 'SI'];
-                    // Убаци своје линкове за наплату испод:
-                    if (regional.includes(data.country_code)) {
-                        window.location.href = 'TVOJ_INSTAGRAM_LINK_ZA_1_EUR';
-                    } else {
-                        window.location.href = 'TVOJ_INSTAGRAM_LINK_ZA_ZAPAD';
-                    }
-                })
-                .catch(() => {
-                    window.location.href = 'TVOJ_INSTAGRAM_LINK_ZA_ZAPAD';
-                });
-        });
-    </script>
+    </div>
 </body>
 </html>
