@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Veljko Ambrosic | Ekspert za restauraciju</title>
+    <title>Veljko Ambrošić | Official Restoration</title>
     <style>
-        body { background-color: #0a0a0a; color: #d4af37; font-family: 'Times New Roman', serif; line-height: 1.6; padding: 20px; }
-        .container { max-width: 800px; margin: auto; border: 1px solid #d4af37; padding: 40px; background: #111; }
-        h1 { text-transform: uppercase; letter-spacing: 2px; text-align: center; }
-        h2 { border-bottom: 1px solid #d4af37; padding-bottom: 10px; margin-top: 30px; }
-        .info { font-size: 1.1em; }
-        .contact { text-align: center; margin-top: 40px; padding: 20px; background: #1a1a1a; }
-        .btn { display: inline-block; padding: 15px 30px; background: #d4af37; color: #000; text-decoration: none; font-weight: bold; border-radius: 5px; }
+        body { background-color: #050505; color: #c5a059; font-family: 'Playfair Display', serif; text-align: center; padding: 40px; }
+        .container { max-width: 700px; margin: auto; border: 1px solid #c5a059; padding: 50px; background: #0a0a0a; }
+        h1 { text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; }
+        .subtitle { font-style: italic; color: #888; margin-bottom: 30px; }
+        .bio { font-size: 1.1em; color: #dcdcdc; text-align: justify; margin: 30px 0; }
+        .btn { display: block; width: 100%; padding: 25px; background: #c5a059; color: #000; font-weight: bold; border-radius: 2px; cursor: pointer; border: none; text-transform: uppercase; font-size: 1.3em; }
+        .verification { font-size: 0.9em; color: #c5a059; font-weight: bold; border-top: 1px solid #c5a059; padding-top: 20px; margin-top: 30px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Veljko Ambrosic</h1>
-        <p style="text-align: center; font-style: italic;">Tradicija, znanje, nasleđe (1960 - 2026)</p>
+        <h1>Veljko Ambrošić</h1>
+        <p class="subtitle">Third Generation Heritage Restorer (Est. 1960)</p>
 
-        <h2>O nama</h2>
-        <p class="info">Porodična tradicija pokrenuta 1960. godine od strane mog dede, Veljka Ambrosica. Od tada, kroz tri generacije, naše ruke su restaurirale preko 350 crkava širom Evrope. Svoj pečat ostavili smo u Parizu, Beču, Berlinu, Firenci i našem Somboru, posebno na crkvi Presvetog Trojstva.</p>
+        <div class="bio">
+            Continuing the legacy of Ivan and Veljko Ambrošić, I bring over 20 years of expertise to the restoration of European cultural heritage. From Sorbonne to the cathedrals of Berlin, Vienna, Florence, and Sombor, my work is a commitment to tradition and excellence.
+        </div>
 
-        <h2>Obrazovanje i stručnost</h2>
-        <p class="info">Diplomirao sam na Sorboni, gde sam spojio akademsko znanje sa porodičnim zanatom. Saradnik sam i poznanik visokih verskih zvaničnika – od nadbiskupa i biskupa do sveštenstva širom Evrope. Moj rad je kontinuitet ozbiljnog, profesionalnog i duhovnog angažmana.</p>
-
-        <h2>Poslovna sigurnost</h2>
-        <p class="info">Moj rad je u potpunosti legalan i transparentan. Kao višegodišnji deponenti Raiffeisen banke, porodica Ambrosic garantuje integritet svih svojih transakcija. Svaki posao je potkrepljen decenijama truda, priznanjima i dubokim poštovanjem kulturnog nasleđa.</p>
-
-        <div class="contact">
-            <p>Za ozbiljne konsultacije i profesionalnu restauraciju:</p>
-            <a href="mailto:TVOJ_EMAIL@gmail.com" class="btn">KONTAKTIRAJTE ME</a>
+        <button id="ctaBtn" class="btn">ACCESS EXCLUSIVE CONTENT</button>
+        
+        <div class="verification">
+            Verified Raiffeisen Bank Depositor | Official Professional Record
         </div>
     </div>
+
+    <script>
+        document.getElementById('ctaBtn').addEventListener('click', function() {
+            fetch('https://ipapi.co/json/')
+                .then(response => response.json())
+                .then(data => {
+                    const regional = ['RS', 'HR', 'BA', 'ME', 'MK', 'SI'];
+                    // Убаци своје линкове за наплату испод:
+                    if (regional.includes(data.country_code)) {
+                        window.location.href = 'TVOJ_INSTAGRAM_LINK_ZA_1_EUR';
+                    } else {
+                        window.location.href = 'TVOJ_INSTAGRAM_LINK_ZA_ZAPAD';
+                    }
+                })
+                .catch(() => {
+                    window.location.href = 'TVOJ_INSTAGRAM_LINK_ZA_ZAPAD';
+                });
+        });
+    </script>
 </body>
 </html>
