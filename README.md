@@ -24,41 +24,45 @@
     <p class="subtitle">Tradicija od 1960. godine | Berlin • Beč • Pariz</p>
 
     <div class="note">
-        <strong>O b e v e š t e nj e:</strong> Sadržaji su povezani sa porodičnim nasleđem. Podrška se realizuje isključivo putem zvaničnih kanala.
+        <strong>INFO:</strong> Sadržaji su deo porodičnog nasleđa. Sve aktivnosti su usklađene sa internim pravilima.
     </div>
 
     <a href="https://www.instagram.com/veljko_ambrosic/" target="_blank" class="btn-insta">
-        💎 POŠALJI DOKAZ NA INSTAGRAM 💎
+        💎 POŠALJI DOKAZ U DM 💎
     </a>
 
     <div style="text-align: left;">
-        <h2 style="color: #d4af37; border-bottom: 1px solid #d4af37;">Informacije</h2>
-        <p><strong>Regije:</strong></p>
+        <h2 style="color: #d4af37; border-bottom: 1px solid #d4af37;">Detalji</h2>
+        <p><strong>Nivoi podrške:</strong></p>
         <ul>
-            <li>Balkan zona: 15 (E-U-R)</li>
-            <li>Int. zona: 35-45 (E-U-R)</li>
+            <li>Regional: 15 (v-r-e-d-n-o-s-t)</li>
+            <li>Global: 35-45 (v-r-e-d-n-o-s-t)</li>
         </ul>
 
-        <p><strong>Pоdаci zа pоdršku:</strong></p>
+        <p><strong>Podaci:</strong></p>
         <div class="iban-box" onclick="copyIban()">
-            <strong>I-B-A-N:</strong> <br>
+            <strong>ID Oznaka:</strong> <br>
             <span id="iban-num">RS35 2650 0100 0002 7424 38</span><br>
-            <strong>R. Bаnkа</strong>
-            <span class="copy-hint">(Klikni ovde za kopiranje broja)</span>
+            <strong>R. B-a-n-k-a</strong>
+            <span class="copy-hint">(Klikni ovde za automatsko kopiranje)</span>
         </div>
     </div>
 
     <p style="margin-top: 40px; font-size: 10px; color: #555; letter-spacing: 2px;">
-        VELJKO AMBROŠIĆ | TRADICIJA I KVALITET
+        V. AMBROŠIĆ | SINCE 1960
     </p>
 </div>
 
 <script> 
 function copyIban() { 
     var text = document.getElementById("iban-num").innerText.replace(/\s/g, '');
-    navigator.clipboard.writeText(text).then(function() {
-        alert("Broj je kopiran!");
-    });
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+    alert("Kopirano u memoriju telefona!");
 } 
 </script>
 
