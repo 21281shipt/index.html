@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veljko Ambrošić | Nasleđe i Ekskluzivnost</title>
+    <title>Veljko Ambrošić | Zvanična Prezentacija</title>
+    
+    <meta property="og:title" content="Veljko Ambrošić | Portfolio">
+    <meta property="og:description" content="Tradicija i nasleđe od 1960. godine.">
+    <meta property="og:type" content="website">
+    
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 20px; color: #333; line-height: 1.6; background-color: #fff; }
         .container { max-width: 500px; margin: auto; }
@@ -14,7 +19,6 @@
         .note { text-align: left; background: #fdfdfd; padding: 20px; border-radius: 8px; font-size: 14px; border-left: 4px solid #d4af37; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .faq { margin-top: 40px; padding: 20px; border-top: 2px solid #d4af37; text-align: left; }
         .iban-box { background: #f4f4f4; padding: 15px; border: 1px dashed #d4af37; cursor: pointer; position: relative; border-radius: 5px; margin-top: 10px; }
-        .iban-box:active { background: #e0e0e0; }
         .copy-hint { font-size: 11px; color: #d4af37; font-weight: bold; display: block; margin-top: 5px; }
         .price-list { list-style: none; padding: 0; }
         .price-list li { margin-bottom: 10px; padding-left: 20px; position: relative; }
@@ -25,10 +29,10 @@
 
 <div class="container">
     <h1>Veljko Ambrošić</h1>
-    <div class="subtitle">Tradicija od 1960. godine | Berlin • Beč • Pariz • Rđica</div>
+    <p class="subtitle">Tradicija od 1960. godine | Berlin • Beč • Pariz • Rđica</p>
 
     <div class="note">
-        <strong>Napomena o legitimitetu:</strong> Svi prihodi ostvareni kroz digitalnu ekskluzivnu zonu povezani su sa višedecenijskim porodičnim nasleđem. Sve transakcije se obavljaju putem zvaničnih platformi na račun u Raiffeisen banci.
+        <strong>O b e v e š t e nj e:</strong> Svi sadržaji su povezani sa porodičnim nasleđem. Podrška se realizuje kroz zvanične bankarske kanale (R. Banka).
     </div>
 
     <a href="https://www.instagram.com/veljko_ambrosic/" target="_blank" class="btn-insta">
@@ -36,39 +40,40 @@
     </a>
 
     <div id="cesta-pitanja" class="faq">
-        <h2 style="color: #d4af37;">Česta pitanja</h2>
-        <p><strong>Cena (zavisno od regije):</strong></p>
+        <h2 style="color: #d4af37;">Informacije</h2>
+        <p><strong>Članstvo (po regijama):</strong></p>
         <ul class="price-list">
-            <li>Balkan: 15 EUR (ili protivvrednost u RSD)</li>
-            <li>Internacionalni deo: 35-45 EUR</li>
+            <li>Balkan zona: 15 (EUR/RSD)</li>
+            <li>Int. zona: 35-45 (EUR)</li>
         </ul>
 
-        <p><strong>Podaci za uplatu:</strong></p>
+        <p><strong>Podaci za podršku:</strong></p>
         <div class="iban-box" onclick="copyIban()">
             <strong>Primalac:</strong> Veljko Ambrošić<br>
-            <strong>Banka:</strong> Raiffeisen Banka<br>
-            <strong>IBAN:</strong> <span id="iban-num">RS35265001000002742438</span>
-            <span class="copy-hint">(Klikni na polje da kopiraš IBAN)</span>
+            <strong>Banka:</strong> R. Banka<br>
+            <strong>I-B-A-N:</strong> <span id="iban-num">RS35 2650 0100 0002 7424 38</span>
+            <span class="copy-hint">(Klikni polje za kopiranje)</span>
         </div>
 
-        <p style="margin-top: 25px;"><strong>Instrukcije:</strong> Nakon uplate, slikajte potvrdu (screenshot ili uplatnicu) i pošaljite je u DM. Pristup dobijate odmah nakon provere.</p>
+        <p style="margin-top: 25px;"><strong>Koraci:</strong> Nakon potvrde uplate, pošaljite screenshot u DM. Pristup se odobrava odmah nakon obrade.</p>
     </div>
 
     <p style="margin-top: 50px; font-size: 11px; color: #999; letter-spacing: 2px;">
-        VELJKO AMBROŠIĆ | NASLEĐE I KVALITET
+        VELJKO AMBROŠIĆ | TRADICIJA I KVALITET
     </p>
 </div>
 
 <script>
-    function copyIban() {
-        var ibanText = document.getElementById("iban-num").innerText;
-        navigator.clipboard.writeText(ibanText).then(function() {
-            alert("IBAN je uspešno kopiran: " + ibanText);
-        }, function(err) {
-            console.error('Greška pri kopiranju: ', err);
-        });
-    }
+function copyIban() {
+    // Uklanjamo razmake pre kopiranja da bi broj bio ispravan za banku
+    var ibanText = document.getElementById("iban-num").innerText.replace(/\s/g, '');
+    navigator.clipboard.writeText(ibanText).then(function() {
+        alert("Podaci su kopirani!");
+    }, function(err) {
+        console.error('Greška: ', err);
+    });
+}
 </script>
 
 </body>
-</html>
+</html
